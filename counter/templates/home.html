@@ -1,1 +1,177 @@
-<h1>Helloooo</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Foodie Calorie Finder</title>
+</head>
+
+<body style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <img src="images/logo.png" class="img-responsive logo mb-5 mt-5" alt="Foodie Calorie Finder"
+                    style="max-width: 200px; margin-bottom: 30px;">
+                <form>
+                    <div class="input-group input-group-lg mb-5">
+                        <input type="text" name="query" class="form-control"
+                            placeholder="Search for calories in your food..." required
+                            style="border-radius: 0;">
+                        <button class="btn whoop" type="submit" id="button-addon2"
+                            style="border-radius: 0; background-color: #6c757d; color: #fff;">Find calories</button>
+                    </div>
+                </form>
+                <div class="alert alert-warning d-none"
+                    style="background-color: #fff; color: #dc3545; border-color: #dc3545;">Oh no! Something went wrong.
+                    Please try again later.</div>
+                <h1 style="color: #000; font-size: 36px; font-weight: bold;">Granola has a total of <strong>100
+                        Calories</strong>
+                    <img src="images/shocked.png" alt="Shocked" class="img-responsive"
+                        style="width: 40px; height: 40px; margin-left: 10px;"></h1>
+                <div class="alert alert-danger mt-3" role="alert"
+                    style="background-color: #fff; color: #dc3545; border-color: #dc3545;">
+                    This food contains a high amount of sodium. High sodium causes severe dehydration and water retention.
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-md-10 caloriescont shadow rounded"
+                style="background-color: #fff; padding: 30px;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="mt-3 mb-4">Nutritional Values</h2>
+                        <ul>
+                            <li class="servingsize"
+                                style="list-style-type: none; margin-bottom: 10px;">Serving Size per 100 Grams <span
+                                    class="float-end" style="float: right; font-weight: bold;"></span></li>
+                            <li style="list-style-type: none;">Carbohydrates: <span
+                                    class="float-end">0.00</span></li>
+                            <li style="list-style-type: none;">Cholesterol: <span
+                                    class="float-end">0.00</span></li>
+                            <li style="list-style-type: none;">Saturated fat: <span
+                                    class="float-end">0.00</span></li>
+                            <li style="list-style-type: none;">Total Fat: <span
+                                    class="float-end">0.00</span></li>
+                            <li style="list-style-type: none;">Fiber Content: <span
+                                    class="float-end">0.00</span></li>
+                            <li style="list-style-type: none;">Potassium: <span
+                                    class="float-end">0.00</span></li>
+                            <li style="list-style-type: none;">Protein: <span class="float-end">0.00</span></li>
+                            <li style="list-style-type: none;">Sodium: <span class="float-end">0.00</span></li>
+                            <li style="list-style-type: none;">Sugar: <span class="float-end">0.00</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h4 class="mt-3 mb-4">To burn 100 calories you will have to</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                            class="bi bi-person-dash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 1.5c.722 0 1.4.143 2.013.43a4.977 4.977 0 0 1 2.554 1.703c.205.24.39.506.554.796L15.5 6H13v2h2.5l-.333 1h-2.167l-.5 2H13v2h-1.167L12 14H8.667l-.5-2H10v-2H7.5l-.333-1H10V6H7.5L8.82 4.03A4.977 4.977 0 0 1 11.34 2.23 3.48 3.48 0 0 0 10.47 2 3.49 3.49 0 0 0 8 1.5zM8 2a2.5 2.5 0 0 0-1.88 4.219L8 7.67l1.88-1.45A2.5 2.5 0 0 0 8 2zM1 15h12v-2H1v2zm13-6h-2.167l-.5-2H14V7h-1.167L14 5H9.667l-.5-2H13V2H9.833L9 0H7l-.833 2H3v1h2.167l-.5 2H3v2h2.167l-.333 1H3v2h1.167l-.5 2H3v1h4l.833-2H10v-2h2.167l-.5-2H10V7h3.833L14 5H12V3h1.833L14 1h-4L9.167 3H7V5h1.167l-.5 2H7v2h2.167l-.5 2H7v1h2l.833-2H11v-2h2.167l-.333-1H13v-2h2.167l-.5-2H13V1h-2.167l-.833-2H9L8.167 1H6.333L5.5-1H3v1h1.833l-.5 2H3v2h2.167l-.5 2H3v1h4l.833-2H9v-2h1.167l-.5-2H9V5h1.167l-.5 2H9v2h2.167l-.333 1H11v2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5>Jog</h5>
+                                        <p>You will have to jog for <strong>20</strong> minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="images/yoga.png" alt="Power Yoga" style="width: 40px; height: 40px;">
+                                    </div>
+                                    <div class="flex-grow-1 ms-4">
+                                        <h5>Do Power Yoga</h5>
+                                        <p>You will have to do Power Yoga for <strong>20</strong> minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="images/weightlifter.png" alt="Gym Workout"
+                                            style="width: 40px; height: 40px;">
+                                    </div>
+                                    <div class="flex-grow-1 ms-4">
+                                        <h5>Get a Gym Workout</h5>
+                                        <p>You will have to lift weights for <strong>20</strong> minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <img src="images/walking.png" alt="Brisk Walk" style="width: 40px; height: 40px;">
+                                    </div>
+                                    <div class="flex-grow-1 ms-1">
+                                        <h5>Go for a Brisk Walk</h5>
+                                        <p>You will have to brisk walk for <strong>20</strong> minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-md-8 text-center">
+                <h2 class="mt-3 mb-4">Add to Your Meal</h2>
+                <div class="btn-group" role="group" aria-label="Meal Type">
+                    <button type="button" class="btn btn-secondary active">Breakfast</button>
+                    <button type="button" class="btn btn-secondary">Lunch</button>
+                    <button type="button" class="btn btn-secondary">Dinner</button>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="images/omelette.jpg" class="card-img-top" alt="Omelette">
+                            <div class="card-body">
+                                <h5 class="card-title">Omelette</h5>
+                                <p class="card-text">Add a healthy omelette to your breakfast!</p>
+                                <a href="#" class="btn btn-primary">Add</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="images/smoothie.jpg" class="card-img-top" alt="Smoothie">
+                            <div class="card-body">
+                                <h5 class="card-title">Smoothie</h5>
+                                <p class="card-text">Start your day with a refreshing smoothie!</p>
+                                <a href="#" class="btn btn-primary">Add</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="images/yogurt.jpg" class="card-img-top" alt="Yogurt">
+                            <div class="card-body">
+                                <h5 class="card-title">Yogurt</h5>
+                                <p class="card-text">Enjoy a bowl of yogurt for a healthy breakfast!</p>
+                                <a href="#" class="btn btn-primary">Add</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-h+Akjldby/E4iOxOxlgeyTpGzNdYczbmCrPnoeqa/qvKKx0Tw67UovRdZl0Ohr0B"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
