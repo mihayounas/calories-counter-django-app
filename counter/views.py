@@ -31,5 +31,9 @@ def signup(request):
     return render(request, 'signup.html', {'form': form})
 
 
+def welcome(request):
+    return render(request, 'home.html')
+    
+
 def home(request):
     return render(request, 'landingpage.html')
